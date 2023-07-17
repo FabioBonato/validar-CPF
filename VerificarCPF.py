@@ -6,7 +6,7 @@ def corrigindo_cpf(param):
     cpf = re.sub(r'[^0-9]', '', param)
     print(cpf)
     if len(cpf) > 11 or len(cpf) < 11:
-        print('This cpf is false')
+        print('CPF inválido')
         sys.exit()
     return cpf
 
@@ -14,7 +14,7 @@ def corrigindo_cpf(param):
 def entrada_sequencial(param):
     cpf = param == param[0] * len(param)
     if cpf:
-        print('CPF invalido')
+        print('CPF inválido')
         sys.exit()
 
     return cpf
@@ -23,7 +23,7 @@ def entrada_sequencial(param):
 def converter(param):
     cpf = int(param)
     if not isinstance(cpf, int):
-        raise TypeError('This is not a number')
+        raise TypeError('Numero inválido')
     return cpf
 
 
