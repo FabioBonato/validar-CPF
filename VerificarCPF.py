@@ -20,15 +20,7 @@ def entrada_sequencial(param):
     return cpf
 
 
-def converter(param):
-    cpf = int(param)
-    if not isinstance(cpf, int):
-        raise TypeError('Numero inválido')
-    return cpf
-
-
 cpf = corrigindo_cpf(input('digite seu cpf: '))
-converter(cpf)
 entrada_sequencial(cpf)
 
 nove_digito = cpf[:9]
