@@ -35,7 +35,7 @@ for i in nove_digito:
     contador_regressivo -= 1
 
 
-digito_1 = ((resultado_1 * 10) % 11)
+digito_1 = (resultado_1 * 10) % 11
 digito_1 = digito_1 if digito_1 <= 9 else 0
 
 dez_digito = cpf[:10]
@@ -51,7 +51,7 @@ for i in dez_digito:
     contador_regressivo -= 1
 
 
-digito_2 = ((resultado_2 * 10) % 11)
+digito_2 = (resultado_2 * 10) % 11
 digito_2 = digito_2 if digito_2 <= 9 else 0
 
 
