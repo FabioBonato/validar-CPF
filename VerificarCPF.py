@@ -3,21 +3,20 @@ import sys
 
 
 def corrigindo_cpf(param):
-    cpf = re.sub(r'[^0-9]', '', param)
-    print(cpf)
-    if len(cpf) > 11 or len(cpf) < 11:
+    new_cpf = re.sub(r'[^0-9]', '', param)
+    if len(new_cpf) > 11 or len(new_cpf) < 11:
         print('CPF inválido')
         sys.exit()
-    return cpf
+    return new_cpf
 
 
 def entrada_sequencial(param):
-    cpf = param == param[0] * len(param)
+    new_cpf = param == param[0] * len(param)
     if cpf:
         print('CPF inválido')
         sys.exit()
 
-    return cpf
+    return new_cpf
 
 
 cpf = corrigindo_cpf(input('digite seu cpf: '))
