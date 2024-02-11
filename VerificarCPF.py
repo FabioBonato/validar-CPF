@@ -29,6 +29,8 @@ resultado_1 = 0
 
 contador_regressivo = 10
 
+# Calculo do primeiro dígito do CPF
+
 for i in nove_digito:
     resultado_1 += int(i) * contador_regressivo
 
@@ -44,6 +46,8 @@ resultado_2 = 0
 
 
 contador_regressivo = 11
+
+# alculo do segundo dígito do CPF
 
 for i in dez_digito:
     resultado_2 += int(i) * contador_regressivo
